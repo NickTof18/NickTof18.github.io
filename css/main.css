@@ -1,0 +1,198 @@
+/*
+ *	Main
+ */
+body {
+	padding-bottom: 2rem;
+	color: #212529;
+	text-align: center;
+}
+
+.gradient-background {
+	background-image: linear-gradient(135deg, #5C97F2, #F95954);
+	background-repeat: no-repeat;
+	width: 100%;
+	top: -80px;
+	bottom: -80px;
+	position: fixed;
+	z-index: -1;
+}
+
+#dark-start {
+	opacity: 1;
+    background-color: #212529;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+	z-index: 1;
+	pointer-events: none;
+}
+
+#dark-start:before {
+    content: '';
+	position: fixed;
+    left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+	animation-duration: 1s;
+	box-shadow: 0px 0px 0px 100vmax #212529;
+	width: 150vmax;
+	height: 150vmax;
+}
+
+.transition:before {
+	animation-name: spotlight;
+}
+
+.nonexistent {
+	display: none;
+}
+
+@keyframes spotlight {
+	from {
+		width: 0vmin;
+		height: 0vmin;
+	}
+
+	to {
+		width: 150vmax;
+		height: 150vmax;
+	}
+}
+
+
+/*
+ *	Header
+ */
+.full-title {
+	padding-top: .5rem;
+	padding-bottom: 1rem;
+	font-size: 1.1rem;
+}
+
+.profile {
+	display: inline-block;
+	margin: 1rem 0;
+}
+
+.profile-pic {
+	height: 130px;
+	border-radius: 50%;
+}
+
+.full-title a, a:active, a:visited {
+	color: #212529;
+}
+
+.full-title a:hover {
+	color: grey;
+}
+
+.full-title .display-4 {
+	font-family: 'Lato', sans-serif;
+}
+
+span.avoidwrap {
+	display: inline-block;
+}
+
+#typing-title {
+	position: relative;
+	margin-bottom: 12px;
+	transition: all .2s ease-in;
+}
+
+.full-name {
+	font-size: 1.2rem;
+}
+
+
+/*
+ *	Project Cards
+ */
+.card-col {
+	display: flex;
+	padding: .5em;
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 1.25rem;
+}
+
+.card-title {
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.card-subtitle {
+	font-family: 'Lato', sans-serif;
+}
+
+.card-sideProjectIcon {
+	max-width: 25%;
+	max-height: 25%;
+}
+
+.company-logo {
+	max-width: 75%;
+	max-height: 128px;
+}
+
+/* fix line appearing between buttons */
+.card a:hover {
+	color: transparent;
+}
+
+.btn-outline-dark {
+	color: #212529;
+	border-color: #212529;
+	margin-bottom: .3em;
+}
+
+
+/*
+ *	SweetAlert
+ */
+.swal-content {
+	color: black;
+	text-align: left;
+}
+
+.swal-icon:first-child {
+	margin-top: 0px;
+}
+
+.swal-icon img {
+	border-radius: 5px 5px 0px 0px;
+}
+
+
+/*
+ *	Typed.js
+ */
+.typed-cursor {
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
