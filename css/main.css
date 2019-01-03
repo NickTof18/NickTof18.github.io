@@ -104,7 +104,7 @@ span.avoidwrap {
 	transition: all .2s ease-in;
 }
 
-.full-name {
+.current-position {
 	font-size: 1.2rem;
 }
 
@@ -137,8 +137,8 @@ span.avoidwrap {
 }
 
 .card-sideProjectIcon {
-	max-width: 25%;
-	max-height: 25%;
+	max-width: 20%;
+	max-height: 20%;
 }
 
 .company-logo {

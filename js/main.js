@@ -20,8 +20,6 @@ if (shouldPlayAnimation) {
 	showPage();
 }
 
-getCurrentSong();
-
 var twelveHours = 12/24;
 Cookies.set('typed', 'true', { expires: twelveHours });
 
