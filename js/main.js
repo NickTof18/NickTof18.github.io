@@ -100,7 +100,7 @@ function popupUrMessages() {
 	'instead it is directly sent to the recipient\'s phone. Any Pictures sent through the app '+
 	'are stored completely anonymously in Apple\'s highly secured iCloud. The pictures are '+
 	'completely deleted from the server the instant the urMessage message is deleted or '+
-	'one week after the message was sent.User privacy is urMessages\'s number one priority.';
+	'one week after the message was sent. User privacy is urMessages\'s number one priority.';
 	swal({
 		content: {
 			element: 'p',
@@ -124,4 +124,25 @@ function popupIDXchange() {
 			attributes: { innerHTML }
 		},
 	});
+}
+
+function popupStayConnected() {
+    var innerHTML = 'StayConnected is an online application aimed to keep alumni and current students in the Software Engineering Graduate Program at the University of Scranton connected while they are in the program and after they have graduated. Currently, alumni and current students do not have a convenient way to stay in touch with each other, but Stay Connected aims to fix this problem.' +
+    '\n StayConnected was created using Java SpringBoot, HTML, CSS, Javascript, and Thymeleaf for the class SE516 at the University of Scranton.';
+    swal({
+        content: {
+            element: 'p',
+            attributes: { innerHTML }
+        },
+    });
+}
+
+function popupClassroomAttendance() {
+    var innerHTML = 'My senior thesis is creating an app for teachers to learn their students’ names and to take attendance of them. It will be a companion for teaching. The people who need this app are teachers in any school. Specifically Dr._ from the Biology Department at the University of Scranton requested the app. This app is needed because teachers can have trouble learning student’s names and quickly taking attendance. If the students always sit in the same seat, a teacher can quickly take attendance and be able to put names to faces. The app will be used by teachers at the University of Scranton, and any school where a teacher has access to an Apple Device. The hardware needed to develop the app will be a Macintosh Computer and an Apple mobile device such as an iPhone or iPad. To use the app, only an Apple Mobile Device will be needed. The software needed to develop the app will be xCode, which is a free app on the Mac App Store used to create apps for Apple devices. The intended user group would be teachers at the University of Scranton as well as any teacher with an Apple mobile device.';
+    swal({
+        content: {
+            element: 'p',
+            attributes: { innerHTML }
+        },
+    });
 }
